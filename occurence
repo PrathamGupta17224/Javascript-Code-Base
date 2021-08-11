@@ -15,12 +15,11 @@
   var nums_length =num.length;
   console.log("length of the array :",nums_length);
   var index =0;
-  var count = 1;
   while(index<nums_length){
     if(num[index]===val){
       console.log(num[index],index);
       num.splice(index,1);
-      count++;
+      index = 0;
     }
     index++;
   }
