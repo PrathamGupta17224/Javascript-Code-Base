@@ -1,0 +1,41 @@
+function returnfunction(){
+        var num = [1, 3, 5, 7], target = 6;
+        var sub_length =0;
+        var subArray=[];
+        var centerindex = num.length / 2;
+        if (num[centerindex] == target) {
+            return centerindex;
+        } else if (num[centerindex] < target) {
+            var index = centerindex + 1;
+            while (index <= num.length) {
+                if (num[index] != undefined) {
+                    if (num[index] == target) {
+                        return index;
+                    }
+                } else {
+                    var subarray2 = num.centerindex;
+                    return index;
+                }
+                index++;
+            }
+        } else if (num[centerindex] > target) {
+            i = 0;
+            while (i < centerindex) {
+                subArray.push(num[i]);
+                i++;
+            }
+            //console.log(subArray);
+            sub_length = subArray.length/2;
+            subArrayIndex = Math.floor(sub_length);
+            console.log(subArrayIndex);
+            if(subArray[subArrayIndex]== target){
+                return subArrayIndex;
+            }else if(subArray[subArrayIndex] <target){
+                diff = target - subArray[subArrayIndex];
+                insertedIndex = diff +1;
+                subArray.splice(insertedIndex, 0, target);
+                console.log(subArray);
+                return insertedIndex;
+            }
+        }
+    }
