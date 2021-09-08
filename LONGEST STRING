@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+var string1 = ["welcome" ,"to", "blackwins", "academy"];
+
+var longeststring = 0;
+var longest;
+
+for (var i = 0; i < string1.length; i++) {
+  if (string1[i].length > longeststring) {
+    var longeststring = string1[i].length;
+    longest = string1[i];
+  }
+}
+
+console.log(longest);
+
+</script>
+</html>
